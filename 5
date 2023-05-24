@@ -1,0 +1,23 @@
+#include <stdio.h>
+
+
+
+int main() {
+    int array[5];
+    int *ptr;
+
+   
+    printf("Digite %d valores inteiros:\n", 5);
+    for (ptr = array; ptr < array + 5; ptr++) {
+        scanf("%d", ptr);
+    }
+
+   
+    printf("O dobro de cada valor lido é:\n");
+    for (ptr = array; ptr < array + 5; ptr++) {
+        printf("%d\n", (*ptr) * 2);
+    }
+
+    return 0;
+}
+
